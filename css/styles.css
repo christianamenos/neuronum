@@ -461,21 +461,6 @@ h1{
 }
 
 @media (max-width: 750px) {
-  #content{
-    padding-left:1%;
-    padding-right:30%;
-  }
-
-  #nexus-wrapper{
-    right:-50px;
-  }
-
-  header.show #share-text{
-    display:none !important;
-  }
-}
-
-@media (max-width: 500px) {
   #sharer{
     padding:0.5em;
     width:100%;
