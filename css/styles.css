@@ -313,6 +313,13 @@ h1{
   font-size:1.5em;
 }
 
+#laguages span{
+  margin-top:1em;
+  margin-bottom:0;
+  font-family:Cookie;
+  font-size:1.5em;
+}
+
 #laguages .gummet{
   font-family:Roboto;
   display:inline-block;
@@ -428,6 +435,10 @@ h1{
   border-color:#ffba00;
 }
 
+.example{
+  display:none;
+}
+
 @media (max-width: 1200px) {
   #content{
     padding-left:10%;
@@ -461,5 +472,102 @@ h1{
 
   header.show #share-text{
     display:none !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #sharer{
+    padding:0.5em;
+    width:100%;
+    text-align:center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    background-color:#fff;
+  }
+
+  #content{
+    text-align:center;
+    padding-left:1%;
+    padding-right:1%;
+  }
+
+  #nexus-wrapper{
+    display:none;
+  }
+
+  header{
+    background-color:#fff;
+  }
+
+  #app-name, #app-download{
+    display:inline-block;
+  }
+
+  #app-download{
+    right:0;
+  }
+
+  #laguages span{
+    display:block;
+  }
+
+  .desc{
+    width:100%;
+    margin-bottom:1em;
+    margin-top:2em;
+  }
+
+  .example{
+    display:block;
+    width:304px;
+    height:600px;
+    position:relative;
+    margin:0 auto;
+    z-index:0;
+    background-image:url('../img/nexus_bg.png');
+  }
+
+  .example:after{
+    -moz-box-shadow:    inset 0 0 3px #000000;
+    -webkit-box-shadow: inset 0 0 3px #000000;
+    box-shadow:         inset 0 0 3px #000000;
+    content:'';
+    position:absolute;
+    z-index:3;
+    top:55px;
+    left:14px;
+    height:490px;
+    width:276px;
+  }
+
+  .example:before{
+    width:304px;
+    height:600px;
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    background-image:url('../img/nexus_light.png');
+  }
+
+  .example div{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:55px;
+    left:14px;
+    height:490px;
+    width:276px;
+    overflow:hidden;
+  }
+
+  .example div img{
+    position:absolute;
+    display:block;
+    width:100%;
+    height:100%;
+    z-index:0;
+    top:0;
   }
 }
